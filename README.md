@@ -10,7 +10,7 @@ I am currently completing my professional internship at **[Sydicol](https://www.
 
 ## Connect With Me
 
-- 🌐 [Visit my GitHub](github.com/dnbravo04)
+- 🌐 [Visit my GitHub](https://github.com/dnbravo04)
 - 📸 Always on the lookout for the perfect shot during my walks.
 
 Thanks for visiting my profile! 😄
