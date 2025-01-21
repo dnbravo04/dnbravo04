@@ -9,6 +9,7 @@ function App() {
   return (
     <div className='bg-caqui'>
     <Title/>
+    <AboutMe/>
     </div>
   )
 }
