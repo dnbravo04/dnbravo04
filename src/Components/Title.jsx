@@ -1,5 +1,5 @@
 import React from "react";
-import SocialLinks from "./SocialLinks";
+import SocialLinks from "./MiniComponents/SocialLinks";
 
 const socialLinks = [
   { href: "https://github.com/dnbravo04", label: "GitHub" },

@@ -3,10 +3,13 @@ import React from "react";
 export const AboutMe = () => {
   return (
     <div className="w-[calc(100vw-1cm)] grid grid-cols-2">
+      <div className="col-start-1 items-center justify-center mx-auto">
+        <img src="/images.jpeg" alt="image" />
+      </div>
       <div className="col-start-2">
-        <div className="border-4 border-black p-6">
+        <div className="border-4 border-black p-6 m-0">
           <h2 className="font-merriweather text-center text-4xl font-bold">
-            About me
+           - About me -
           </h2>
           <p className="text-justify font-serif">
             Nuestra colaboración en Sydicol como Aprendiz me ha permitido
@@ -22,8 +25,6 @@ export const AboutMe = () => {
           </p>
         </div>
       </div>
-
-      <div></div>
     </div>
   );
 };
