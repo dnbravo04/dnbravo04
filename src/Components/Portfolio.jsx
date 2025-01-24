@@ -1,5 +1,7 @@
 import React from "react";
-
+import project1 from "/Ana y Gabriel.png";
+import project2 from "/Mujeres de la Escrituras.png";
+import project3 from "/WorkshopSoftw.png";
 export const Portfolio = () => {
   return (
     <div className="p-4">
@@ -8,17 +10,13 @@ export const Portfolio = () => {
       </h2>
       <ul className="flex justify-evenly  ">
         <li className="m-auto transform transition duration-400 hover:scale-110">
-          <img className="w-72" src="public/Ana y Gabriel.png" alt="" />
+          <img className="w-72" src={project1} alt="" />
         </li>
         <li className="m-auto transform transition duration-400 hover:scale-110">
-          <img
-            className="w-72"
-            src="public/Mujeres de la Escrituras.png"
-            alt=""
-          />
+          <img className="w-72" src={project2} alt="" />
         </li>
         <li className="m-auto transform transition duration-400 hover:scale-110">
-          <img className="w-72" src="public/WorkshopSoftw.png" alt="" />
+          <img className="w-72" src={project3} alt="" />
         </li>
       </ul>
     </div>
