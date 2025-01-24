@@ -13,8 +13,8 @@ function App() {
     <div className='bg-caqui'>
     <Title/>
     <AboutMe/>
-    <Portfolio></Portfolio>
-    <Experience></Experience>
+    <Portfolio/>
+    <Experience/>
     </div>
   )
 }

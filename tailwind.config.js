@@ -11,7 +11,8 @@ export default {
       },
       fontFamily:{
         'merriweather': ['Merriweather'], 
-        'serif': ['ui-serif', 'Georgia']
+        'serif': ['ui-serif', 'Georgia'],
+        'caveat': ['Caveat', 'sans-serif']
       }
     }
   },

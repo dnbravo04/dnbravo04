@@ -2,31 +2,23 @@ import React from "react";
 
 export const Portfolio = () => {
   return (
-    <div className="pt-6">
+    <div className="p-4">
       <h2 className="font-merriweather text-center text-4xl font-bold mb-6">
-        - My projects - 
+        - Mis proyectos -
       </h2>
-      <ul className="flex justify-evenly ">
-        <li className="m-auto">
-          <img
-            className="w-80 transform transition duration-400 hover:scale-110"
-            src="public/Ana y Gabriel.png"
-            alt=""
-          />
+      <ul className="flex justify-evenly  ">
+        <li className="m-auto transform transition duration-400 hover:scale-110">
+          <img className="w-72" src="public/Ana y Gabriel.png" alt="" />
         </li>
-        <li className="m-auto">
+        <li className="m-auto transform transition duration-400 hover:scale-110">
           <img
-            className="w-80 transform transition duration-400 hover:scale-110"
+            className="w-72"
             src="public/Mujeres de la Escrituras.png"
             alt=""
           />
         </li>
-        <li className="m-auto">
-          <img
-            className="w-80 transform transition duration-400 hover:scale-110"
-            src="public/WorkshopSoftw.png"
-            alt=""
-          />
+        <li className="m-auto transform transition duration-400 hover:scale-110">
+          <img className="w-72" src="public/WorkshopSoftw.png" alt="" />
         </li>
       </ul>
     </div>
