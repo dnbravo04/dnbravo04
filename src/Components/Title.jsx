@@ -19,7 +19,7 @@ export const Title = () => {
         </header>
 
         <section className="row-start-2 col-start-1 flex flex-col items-start pl-4">
-          <h1 className="font-merriweather text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-8xl">
+          <h1 className="font-merriweather text-4xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl">
             Diego Bravo Arias
           </h1>
         </section>
