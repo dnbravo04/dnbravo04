@@ -10,13 +10,19 @@ export const Portfolio = () => {
       </h2>
       <ul className="flex justify-evenly  ">
         <li className="m-auto transform transition duration-400 hover:scale-110">
-          <img className="w-72" src={project1} alt="" />
+          <a href="https://github.com/dnbravo04/anaygabriel">
+            <img className="w-72" src={project1} alt="" />
+          </a>
         </li>
         <li className="m-auto transform transition duration-400 hover:scale-110">
-          <img className="w-72" src={project2} alt="" />
+          <a href="https://github.com/dnbravo04/mujeres-escrituras">
+            <img className="w-72" src={project2} alt="" />
+          </a>
         </li>
         <li className="m-auto transform transition duration-400 hover:scale-110">
-          <img className="w-72" src={project3} alt="" />
+          <a href="https://github.com/dnbravo04/workshopsoftware">
+            <img className="w-72" src={project3} alt="" />
+          </a>
         </li>
       </ul>
     </div>
