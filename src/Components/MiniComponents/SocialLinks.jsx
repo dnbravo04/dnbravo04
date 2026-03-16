@@ -20,7 +20,7 @@ const iconMap = {
 
 const SocialLinks = ({ links }) => {
   return (
-    <div className="left-0 flex items-center space-x-4 pl-4">
+    <div className="flex items-center gap-3">
       {links.map((link) => {
         const Icon = iconMap[link.label];
         if (!Icon) {
@@ -33,7 +33,7 @@ const SocialLinks = ({ links }) => {
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-3xl text-black transition duration-75 ease-in-out hover:scale-125 hover:opacity-75"
+            className="p-3 text-xl bg-manga-gray-100 border-2 border-manga-gray-300 text-manga-gray-700 hover:bg-manga-black hover:text-white hover:border-manga-black transition-all"
             aria-label={link.label}
           >
             <Icon />

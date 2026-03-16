@@ -1,22 +1,26 @@
-import { useState } from 'react'
 import './App.css'
+import { Navbar } from './Components/Navbar'
 import { Title } from './Components/Title'
 import { AboutMe } from './Components/AboutMe'
-import {Portfolio}from './Components/Portfolio'
-import {Experience} from './Components/Experience'
-import {Footer} from './Components/Footer'
+import { TestingExperience } from './Components/TestingExperience'
+import { Portfolio } from './Components/Portfolio'
+import { Resume } from './Components/Resume'
+import { Contact } from './Components/Contact'
+import Footer from './Components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className='bg-caqui'>
-    <Title/>
-    <AboutMe/>
-    <Portfolio/>
-    <Footer></Footer>
-    </div>
-  )
+    <main className="min-h-screen bg-manga-white font-inter">
+      <Navbar />
+      <Title />
+      <AboutMe />
+      <TestingExperience />
+      <Portfolio />
+      <Resume />
+      <Contact />
+      <Footer />
+    </main>
+  );
 }
 
 export default App
