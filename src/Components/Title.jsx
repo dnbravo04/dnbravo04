@@ -19,54 +19,52 @@ export const Title = () => {
         <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-ink to-transparent transform rotate-1"></div>
       </div>
       
-      <div className="max-w-7xl mx-auto px-4 py-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
-        {/* Left: Text content - manga style clean */}
-        <div className="space-y-8 animate-slide-in-left">
+      <div className="max-w-7xl mx-auto px-4 py-24 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10">
+        {/* Left: Text content - professional clean */}
+        <div className="space-y-10 animate-slide-in-left">
           {/* Badge minimalista */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-manga-black text-manga-white border-l-4 border-manga-accent-red">
-            <div className="w-2 h-2 bg-manga-accent-red"></div>
-            <span className="font-inter text-sm font-semibold tracking-wider uppercase">QA Engineer</span>
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-manga-black text-manga-white border-l-4 border-manga-accent-olive">
+            <div className="w-2 h-2 bg-manga-accent-olive"></div>
+            <span className="font-inter text-sm font-semibold tracking-[0.15em] uppercase">App Developer & QA Engineer</span>
           </div>
 
-          {/* Name - estilo manga con líneas limpias */}
+          {/* Name - professional typography */}
           <h1 className="font-display leading-none">
-            <span className="block text-7xl md:text-8xl text-manga-black tracking-tight">
+            <span className="block text-7xl md:text-9xl text-manga-black tracking-tight">
               DIEGO
             </span>
-            <span className="block text-6xl md:text-7xl text-manga-gray-700 tracking-tight -mt-2">
+            <span className="block text-5xl md:text-7xl text-manga-gray-700 tracking-tight -mt-3">
               BRAVO ARIAS
             </span>
           </h1>
 
-          {/* Línea decorativa manga */}
+          {/* Línea decorativa */}
           <div className="flex items-center gap-4">
             <div className="h-px flex-1 bg-gradient-to-r from-manga-black to-transparent"></div>
-            <div className="w-2 h-2 bg-manga-accent-red rotate-45"></div>
+            <div className="w-2 h-2 bg-manga-accent-olive rotate-45"></div>
           </div>
 
-          {/* Description en panel limpio */}
-          <div className="relative bg-white border-l-4 border-manga-accent-blue p-6 shadow-panel">
-            <p className="font-inter text-lg text-manga-gray-800 leading-relaxed">
-              Especializado en <span className="font-semibold text-manga-black">testing manual</span> de aplicaciones web.
-              Background en desarrollo con <span className="font-semibold text-manga-accent-blue">React</span> y <span className="font-semibold text-manga-accent-teal">Node.js</span>.
+          {/* Description en panel profesional */}
+          <div className="relative bg-white border-l-4 border-manga-accent-olive p-8 shadow-panel">
+            <p className="font-inter text-xl text-manga-gray-800 leading-relaxed">
+              Desarrollo <span className="font-semibold text-manga-black">aplicaciones móviles y web</span> con <span className="font-semibold text-manga-accent-olive">Flutter</span> y <span className="font-semibold text-manga-accent-blue">React</span>.
+              Especialista en <span className="font-semibold text-manga-black">QA y testing</span> para asegurar calidad en cada producto.
             </p>
           </div>
 
-          {/* CTAs profesionales con acento manga */}
+          {/* CTAs profesionales */}
           <div className="flex flex-wrap gap-4">
             <a
               href="#contact"
-              className="group relative px-8 py-4 bg-manga-black text-manga-white font-inter font-semibold border-b-4 border-manga-gray-900 hover:border-manga-accent-red transition-all overflow-hidden"
+              className="group relative px-10 py-4 bg-manga-black text-manga-white font-inter font-semibold border-b-4 border-manga-gray-900 hover:border-manga-accent-olive transition-all overflow-hidden"
             >
               <span className="relative z-10">Contáctame</span>
-              <div className="absolute inset-0 bg-manga-accent-red transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
             </a>
             <a
-              href="/cv-diego-bravo.pdf"
-              download
-              className="px-8 py-4 bg-white text-manga-black font-inter font-semibold border-2 border-manga-black hover:bg-manga-gray-100 transition-all"
+              href="#projects"
+              className="group relative px-10 py-4 bg-white text-manga-black font-inter font-semibold border-2 border-manga-gray-300 hover:border-manga-black transition-all"
             >
-              Descargar CV
+              <span className="relative z-10">Ver Proyectos</span>
             </a>
           </div>
 
@@ -117,4 +115,3 @@ export const Title = () => {
   );
 };
 
-export default Title;

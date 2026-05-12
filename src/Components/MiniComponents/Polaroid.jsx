@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useMemo } from "react";
 
 const Polaroid = ({ image, altText, caption, alignRight }) => {
-  const rotation = Math.random() * 6 - 3;
+  const rotation = useMemo(() => Math.random() * 6 - 3, []);
 
   return (
     <div

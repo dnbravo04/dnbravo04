@@ -40,50 +40,47 @@ export const Contact = () => {
 
       <div className="max-w-4xl mx-auto text-center relative">
         {/* Section title */}
-        <div className="mb-12 animate-fade-in">
-          <div className="flex items-center gap-4 mb-4 justify-center">
+        <div className="mb-20 animate-fade-in">
+          <div className="flex items-center gap-4 mb-4">
             <div className="h-px w-20 bg-manga-gray-700"></div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-manga-accent-red rotate-45"></div>
-              <span className="font-inter text-sm font-semibold tracking-wider uppercase text-manga-gray-500">Contacto</span>
-              <div className="w-2 h-2 bg-manga-accent-red rotate-45"></div>
+              <div className="w-2 h-2 bg-manga-accent-olive rotate-45"></div>
+              <span className="font-inter text-sm font-semibold tracking-[0.15em] uppercase text-manga-gray-500">Contacto</span>
+              <div className="w-2 h-2 bg-manga-accent-olive rotate-45"></div>
             </div>
             <div className="h-px w-20 bg-manga-gray-700"></div>
           </div>
-          <h2 className="font-display text-5xl md:text-6xl text-white text-center tracking-tight mb-6">
+          <h2 className="font-display text-5xl md:text-6xl text-white text-center tracking-tight mb-8">
             HABLEMOS
           </h2>
-          <p className="font-inter text-lg text-manga-gray-400 max-w-2xl mx-auto">
-            Abierto a oportunidades en QA y desarrollo web.
+          <p className="font-inter text-xl text-manga-gray-400 max-w-2xl mx-auto">
+            Abierto a oportunidades en desarrollo de apps y QA.
           </p>
         </div>
 
         {/* Contact cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16">
           {contactLinks.map((item, index) => (
             <a
               key={item.label}
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-manga-gray-900 border-2 border-manga-gray-700 p-6 hover:border-manga-accent-red transition-all animate-slide-up"
+              className="group bg-white/10 backdrop-blur-sm border border-manga-gray-600 p-8 hover:bg-white/20 hover:border-manga-accent-olive transition-all animate-slide-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="flex items-center gap-4">
-                <div className={`p-4 bg-gradient-to-br ${item.color} text-white group-hover:scale-110 transition-transform`}>
+                <div className="p-4 bg-manga-accent-olive text-white group-hover:bg-manga-accent-olive-light transition-colors">
                   <item.icon className="text-2xl" />
                 </div>
-                <div className="text-left flex-1">
-                  <p className="font-inter text-sm font-semibold text-white mb-1">
+                <div>
+                  <p className="font-inter text-sm font-semibold text-manga-gray-400 mb-2">
                     {item.label}
                   </p>
-                  <p className="font-inter text-xs text-manga-gray-400">
-                    {item.text}
+                  <p className="font-inter text-lg font-semibold text-white">
+                    {item.value}
                   </p>
                 </div>
-                <svg className="w-5 h-5 text-manga-gray-600 group-hover:text-manga-accent-red group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
               </div>
             </a>
           ))}
@@ -92,7 +89,7 @@ export const Contact = () => {
         {/* CTA button */}
         <a
           href="mailto:dnbravo04@gmail.com"
-          className="inline-flex items-center gap-3 bg-manga-accent-red text-white px-10 py-5 font-inter font-semibold border-b-4 border-red-800 hover:border-red-900 transition-all group animate-pop"
+          className="inline-flex items-center gap-3 bg-manga-accent-olive text-white px-10 py-5 font-inter font-semibold border-b-4 border-manga-accent-olive-dark hover:border-manga-black transition-all group animate-pop"
         >
           <FaEnvelope className="text-2xl" />
           <span className="text-lg">Enviar Email</span>
@@ -105,4 +102,3 @@ export const Contact = () => {
   );
 };
 
-export default Contact;

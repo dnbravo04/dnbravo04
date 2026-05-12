@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         caqui: "#D4C5A9",
-        // Manga/Comic hybrid palette - monocromático con acentos
+        // Professional palette with olive green accent
         manga: {
           black: "#1a1a1a",
           gray: {
@@ -24,6 +24,9 @@ export default {
           },
           white: "#fafafa",
           accent: {
+            olive: "#6B7B4C",
+            "olive-dark": "#4A5A34",
+            "olive-light": "#8B9B6C",
             red: "#e63946",
             blue: "#457b9d",
             teal: "#2a9d8f",

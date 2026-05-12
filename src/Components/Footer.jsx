@@ -1,4 +1,4 @@
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="py-8 bg-manga-gray-900 border-t-2 border-manga-gray-700 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 relative">
@@ -38,5 +38,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

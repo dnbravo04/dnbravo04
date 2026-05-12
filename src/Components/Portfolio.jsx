@@ -1,32 +1,33 @@
 import React from "react";
-import project1 from "/Ana y Gabriel.png";
-import project2 from "/Mujeres de la Escrituras.png";
-import project3 from "/WorkshopSoftw.png";
+import project1 from "/territory-run.png";
+import project2 from "/academia-ukelele.png";
+import project3 from "/hydrotracker.png";
 
 const projects = [
   {
     image: project1,
-    title: "Ana y Gabriel",
-    problem: "Necesidad de una aplicación web para gestión de eventos personales",
-    solution: "Desarrollo de plataforma interactiva con interfaz intuitiva",
-    stack: ["React", "Firebase", "CSS"],
-    link: "https://github.com/dnbravo04/anaygabriel",
+    title: "Territory Run",
+    problem: "Falta de motivación y gamificación en el running diario",
+    solution: "App móvil que gamifica las carreras permitiendo conquistar territorios de la ciudad, con mapas interactivos, estadísticas en tiempo real y sistema de logros",
+    stack: ["React", "JavaScript", "CSS"],
+    link: "https://territory-run.netlify.app/",
   },
   {
     image: project2,
-    title: "Mujeres de las Escrituras",
-    problem: "Falta de recursos digitales accesibles sobre contenido religioso",
-    solution: "Aplicación web educativa con navegación sencilla y contenido organizado",
-    stack: ["React", "JavaScript", "TailwindCSS"],
-    link: "https://github.com/dnbravo04/mujeres-escrituras",
+    title: "Academia Ukelele",
+    problem: "Necesidad de plataforma para gestionar clases de música a domicilio y virtuales",
+    solution: "Web app para academia de música en Bogotá con gestión de clases, reservas, y múltiples instrumentos (violín, guitarra, piano, ukelele) para todas las edades",
+    stack: ["React", "Firebase", "TailwindCSS"],
+    link: "https://academiaukelele-e89ae.web.app/",
   },
   {
     image: project3,
-    title: "Workshop Software",
-    problem: "Gestión manual de talleres y actividades de software",
-    solution: "Sistema web para organizar y dar seguimiento a workshops técnicos",
-    stack: ["React", "Node.js", "Firebase"],
-    link: "https://github.com/dnbravo04/workshopsoftware",
+    title: "HydroTracker",
+    problem: "Dificultad para monitorear y automatizar cultivos hidropónicos y plantas caseras",
+    solution: "App en desarrollo para monitoreo inteligente y automatización de sistemas de cultivo hidropónico, en tierra y plantas ornamentales",
+    stack: ["Flutter", "Firebase", "IoT"],
+    link: "#",
+    prototype: true,
   },
 ];
 
@@ -38,13 +39,13 @@ export const Portfolio = () => {
 
       <div className="max-w-7xl mx-auto relative">
         {/* Section title */}
-        <div className="mb-16 animate-fade-in">
+        <div className="mb-20 animate-fade-in">
           <div className="flex items-center gap-4 mb-4">
             <div className="h-px flex-1 bg-manga-gray-300"></div>
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-manga-accent-amber rotate-45"></div>
-              <span className="font-inter text-sm font-semibold tracking-wider uppercase text-manga-gray-600">Portfolio</span>
-              <div className="w-2 h-2 bg-manga-accent-amber rotate-45"></div>
+              <div className="w-2 h-2 bg-manga-accent-olive rotate-45"></div>
+              <span className="font-inter text-sm font-semibold tracking-[0.15em] uppercase text-manga-gray-600">Portfolio</span>
+              <div className="w-2 h-2 bg-manga-accent-olive rotate-45"></div>
             </div>
             <div className="h-px flex-1 bg-manga-gray-300"></div>
           </div>
@@ -53,18 +54,16 @@ export const Portfolio = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <a
+            <div
               key={project.title}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group bg-white border-2 border-manga-gray-300 overflow-hidden shadow-panel hover:shadow-panel-hover hover:border-manga-black transition-all animate-slide-up"
+              className={`group bg-white border-2 border-manga-gray-300 overflow-hidden shadow-panel hover:shadow-panel-hover hover:border-manga-black transition-all animate-slide-up ${!project.prototype ? 'cursor-pointer' : ''}`}
               style={{ animationDelay: `${index * 100}ms` }}
+              onClick={() => !project.prototype && window.open(project.link, '_blank', 'noopener,noreferrer')}
             >
               {/* Image */}
-              <div className="relative overflow-hidden h-48 bg-manga-gray-100">
+              <div className="relative overflow-hidden h-56 bg-manga-gray-100">
                 <img
                   className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
                   src={project.image}
@@ -72,36 +71,41 @@ export const Portfolio = () => {
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-manga-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                {project.prototype && (
+                  <div className="absolute top-4 right-4 bg-manga-accent-olive text-white px-4 py-2 font-inter text-xs font-bold uppercase tracking-wider">
+                    Prototipo
+                  </div>
+                )}
               </div>
 
-              <div className="p-6">
+              <div className="p-8">
                 {/* Title */}
-                <h3 className="font-display text-2xl text-manga-black mb-4 group-hover:text-manga-accent-red transition-colors">
+                <h3 className="font-display text-2xl text-manga-black mb-5 group-hover:text-manga-accent-olive transition-colors">
                   {project.title.toUpperCase()}
                 </h3>
                 
                 {/* Problem & Solution */}
-                <div className="space-y-3 mb-4">
-                  <div className="border-l-2 border-manga-accent-red pl-3">
-                    <p className="font-inter text-xs font-semibold text-manga-gray-600 mb-1">Problema</p>
-                    <p className="font-inter text-sm text-manga-gray-800">
+                <div className="space-y-4 mb-5">
+                  <div className="border-l-2 border-manga-accent-olive pl-4">
+                    <p className="font-inter text-xs font-semibold text-manga-gray-600 mb-2 uppercase tracking-wider">Problema</p>
+                    <p className="font-inter text-sm text-manga-gray-800 leading-relaxed">
                       {project.problem}
                     </p>
                   </div>
-                  <div className="border-l-2 border-manga-accent-teal pl-3">
-                    <p className="font-inter text-xs font-semibold text-manga-gray-600 mb-1">Solución</p>
-                    <p className="font-inter text-sm text-manga-gray-800">
+                  <div className="border-l-2 border-manga-accent-olive-light pl-4">
+                    <p className="font-inter text-xs font-semibold text-manga-gray-600 mb-2 uppercase tracking-wider">Solución</p>
+                    <p className="font-inter text-sm text-manga-gray-800 leading-relaxed">
                       {project.solution}
                     </p>
                   </div>
                 </div>
 
                 {/* Tech stack badges */}
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-5">
                   {project.stack.map((tech) => (
                     <span
                       key={tech}
-                      className="bg-manga-gray-100 border border-manga-gray-300 px-3 py-1 font-inter text-xs font-medium text-manga-gray-700"
+                      className="bg-manga-gray-100 border border-manga-gray-300 px-4 py-2 font-inter text-xs font-medium text-manga-gray-700"
                     >
                       {tech}
                     </span>
@@ -109,14 +113,16 @@ export const Portfolio = () => {
                 </div>
 
                 {/* View project link */}
-                <div className="flex items-center gap-2 text-manga-accent-red font-inter text-sm font-semibold group-hover:gap-3 transition-all">
-                  <span>Ver proyecto</span>
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
+                <div className="flex items-center gap-2 text-manga-accent-olive font-inter text-sm font-semibold group-hover:gap-3 transition-all">
+                  <span>{project.prototype ? 'En desarrollo' : 'Ver proyecto'}</span>
+                  {!project.prototype && (
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  )}
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>

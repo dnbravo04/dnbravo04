@@ -6,11 +6,11 @@ import { TestingExperience } from './Components/TestingExperience'
 import { Portfolio } from './Components/Portfolio'
 import { Resume } from './Components/Resume'
 import { Contact } from './Components/Contact'
-import Footer from './Components/Footer'
+import { Footer } from './Components/Footer'
 
 function App() {
   return (
-    <main className="min-h-screen bg-manga-white font-inter">
+    <main className="pt-20">
       <Navbar />
       <Title />
       <AboutMe />
