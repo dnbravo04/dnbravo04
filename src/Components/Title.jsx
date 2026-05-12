@@ -1,5 +1,5 @@
 import React from "react";
-import man from "/man.webp";
+
 import SocialLinks from "./MiniComponents/SocialLinks";
 
 const socialLinks = [
@@ -78,11 +78,7 @@ export const Title = () => {
         <div className="relative animate-slide-in-right">
           {/* Panel manga con sombra sutil */}
           <div className="relative bg-white border-4 border-manga-black p-3 shadow-panel-hover">
-            <img
-              src={man}
-              alt="Diego Bravo Arias - QA Engineer"
-              className="w-full h-auto grayscale-[20%] contrast-110"
-            />
+
             
             {/* Badge disponible minimalista */}
             <div className="absolute -bottom-4 -right-4 bg-manga-accent-red text-white px-6 py-3 border-2 border-manga-black shadow-manga-lg">

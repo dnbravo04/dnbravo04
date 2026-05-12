@@ -1,9 +1,5 @@
 import React from "react";
 import Polaroid from "./MiniComponents/Polaroid";
-import imagen1 from "/imagen1.jpg";
-import imagen2 from "/imagen2.jpg";
-import imagen3 from "/imagen3.jpg";
-import imagen4 from "/imagen4.jpg";
 
 export const AboutMe = () => {
   return (
@@ -32,19 +28,15 @@ export const AboutMe = () => {
           {/* Photos professional style */}
           <div className="grid grid-cols-2 gap-6 animate-slide-in-left">
             <div className="bg-white border-2 border-manga-black p-3 shadow-panel hover:shadow-panel-hover transition-all">
-              <img src={imagen1} alt="Diego Bravo explorando la naturaleza" className="w-full grayscale-[30%]" loading="lazy" />
               <p className="font-inter text-xs font-semibold text-center mt-3 text-manga-gray-700">Explorando</p>
             </div>
             <div className="bg-white border-2 border-manga-black p-3 shadow-panel hover:shadow-panel-hover transition-all mt-12">
-              <img src={imagen2} alt="Diego Bravo practicando fotografía" className="w-full grayscale-[30%]" loading="lazy" />
               <p className="font-inter text-xs font-semibold text-center mt-3 text-manga-gray-700">Fotografía</p>
             </div>
             <div className="bg-white border-2 border-manga-black p-3 shadow-panel hover:shadow-panel-hover transition-all">
-              <img src={imagen3} alt="Diego Bravo tocando el violín" className="w-full grayscale-[30%]" loading="lazy" />
               <p className="font-inter text-xs font-semibold text-center mt-3 text-manga-gray-700">Violín</p>
             </div>
             <div className="bg-white border-2 border-manga-black p-3 shadow-panel hover:shadow-panel-hover transition-all mt-12">
-              <img src={imagen4} alt="Diego Bravo programando en su computadora" className="w-full grayscale-[30%]" loading="lazy" />
               <p className="font-inter text-xs font-semibold text-center mt-3 text-manga-gray-700">Coding</p>
             </div>
           </div>
