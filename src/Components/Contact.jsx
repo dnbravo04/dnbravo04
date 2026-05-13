@@ -1,5 +1,6 @@
 import React from "react";
 import { FaEnvelope, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import SectionTitle from "./MiniComponents/SectionTitle";
 
 const contactLinks = [
   {
@@ -39,24 +40,10 @@ export const Contact = () => {
       <div className="absolute inset-0 bg-halftone bg-halftone opacity-5"></div>
 
       <div className="max-w-4xl mx-auto text-center relative">
-        {/* Section title */}
-        <div className="mb-20 animate-fade-in">
-          <div className="flex items-center gap-4 mb-4">
-            <div className="h-px w-20 bg-manga-gray-700"></div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-manga-accent-olive rotate-45"></div>
-              <span className="font-inter text-sm font-semibold tracking-[0.15em] uppercase text-manga-gray-500">Contacto</span>
-              <div className="w-2 h-2 bg-manga-accent-olive rotate-45"></div>
-            </div>
-            <div className="h-px w-20 bg-manga-gray-700"></div>
-          </div>
-          <h2 className="font-display text-5xl md:text-6xl text-white text-center tracking-tight mb-8">
-            HABLEMOS
-          </h2>
-          <p className="font-inter text-xl text-manga-gray-400 max-w-2xl mx-auto">
-            Abierto a oportunidades en desarrollo de apps y QA.
-          </p>
-        </div>
+        <SectionTitle label="Contacto" title="HABLEMOS" dark />
+        <p className="font-inter text-xl text-manga-gray-400 max-w-2xl mx-auto mb-20">
+          Abierto a oportunidades en desarrollo de apps y QA.
+        </p>
 
         {/* Contact cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16">
@@ -78,7 +65,7 @@ export const Contact = () => {
                     {item.label}
                   </p>
                   <p className="font-inter text-lg font-semibold text-white">
-                    {item.value}
+                    {item.text}
                   </p>
                 </div>
               </div>
@@ -89,7 +76,7 @@ export const Contact = () => {
         {/* CTA button */}
         <a
           href="mailto:dnbravo04@gmail.com"
-          className="inline-flex items-center gap-3 bg-manga-accent-olive text-white px-10 py-5 font-inter font-semibold border-b-4 border-manga-accent-olive-dark hover:border-manga-black transition-all group animate-pop"
+          className="inline-flex items-center gap-3 bg-manga-accent-olive text-white px-10 py-5 font-inter font-semibold border-b-4 border-manga-accent-olive-dark hover:border-manga-black transition-all group"
         >
           <FaEnvelope className="text-2xl" />
           <span className="text-lg">Enviar Email</span>

@@ -3,23 +3,21 @@ export const Footer = () => {
     <footer className="py-8 bg-manga-gray-900 border-t-2 border-manga-gray-700 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 relative">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Name and role */}
           <div className="text-center md:text-left">
             <p className="font-display text-xl text-white mb-1">
               Diego Bravo Arias
             </p>
             <p className="font-inter text-sm text-manga-gray-400">
-              QA Engineer & Developer
+              App Developer & QA Engineer
             </p>
           </div>
           
-          {/* Copyright */}
           <div className="text-center">
             <p className="font-inter text-sm text-manga-gray-400">
               &copy; {new Date().getFullYear()} Todos los derechos reservados
             </p>
             <p className="font-inter text-xs text-manga-gray-500 mt-1">
-              Hecho con React + TailwindCSS
+              Hecho con ❤️ y React
             </p>
           </div>
 

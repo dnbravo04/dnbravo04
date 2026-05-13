@@ -2,6 +2,7 @@ import React from "react";
 import project1 from "/territory-run.png";
 import project2 from "/academia-ukelele.png";
 import project3 from "/hydrotracker.png";
+import SectionTitle from "./MiniComponents/SectionTitle";
 
 const projects = [
   {
@@ -9,22 +10,22 @@ const projects = [
     title: "Territory Run",
     problem: "Falta de motivación y gamificación en el running diario",
     solution: "App móvil que gamifica las carreras permitiendo conquistar territorios de la ciudad, con mapas interactivos, estadísticas en tiempo real y sistema de logros",
-    stack: ["React", "JavaScript", "CSS"],
+    stack: ["Flutter", "Firebase", "Google Maps", "Riverpod"],
     link: "https://territory-run.netlify.app/",
   },
   {
     image: project2,
     title: "Academia Ukelele",
-    problem: "Necesidad de plataforma para gestionar clases de música a domicilio y virtuales",
-    solution: "Web app para academia de música en Bogotá con gestión de clases, reservas, y múltiples instrumentos (violín, guitarra, piano, ukelele) para todas las edades",
+    problem: "Una academia de música en Bogotá necesitaba presencia digital para gestionar clases, instrumentos y estudiantes de forma centralizada",
+    solution: "Plataforma web con React y Firebase: autenticación, gestión de clases para múltiples instrumentos, reservas y sitio institucional. Proyecto propio con usuarios reales en producción",
     stack: ["React", "Firebase", "TailwindCSS"],
     link: "https://academiaukelele-e89ae.web.app/",
   },
   {
     image: project3,
     title: "HydroTracker",
-    problem: "Dificultad para monitorear y automatizar cultivos hidropónicos y plantas caseras",
-    solution: "App en desarrollo para monitoreo inteligente y automatización de sistemas de cultivo hidropónico, en tierra y plantas ornamentales",
+    problem: "Falta de herramientas accesibles para monitorear parámetros críticos en cultivos hidropónicos domésticos e institucionales",
+    solution: "App Flutter con integración ESP32 para monitoreo en tiempo real de pH, temperatura y nivel de agua, con automatización de riego y alertas. Desarrollada como proyecto académico en Ingeniería Agrícola — UNAL",
     stack: ["Flutter", "Firebase", "IoT"],
     link: "#",
     prototype: true,
@@ -33,26 +34,12 @@ const projects = [
 
 export const Portfolio = () => {
   return (
-    <section id="projects" className="py-20 px-4 bg-white relative overflow-hidden">
+    <section id="projects" className="py-20 px-4 bg-manga-gray-100 relative overflow-hidden">
       {/* Subtle pattern */}
-      <div className="absolute inset-0 bg-halftone bg-halftone opacity-100"></div>
+      <div className="absolute inset-0 bg-halftone"></div>
 
       <div className="max-w-7xl mx-auto relative">
-        {/* Section title */}
-        <div className="mb-20 animate-fade-in">
-          <div className="flex items-center gap-4 mb-4">
-            <div className="h-px flex-1 bg-manga-gray-300"></div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-manga-accent-olive rotate-45"></div>
-              <span className="font-inter text-sm font-semibold tracking-[0.15em] uppercase text-manga-gray-600">Portfolio</span>
-              <div className="w-2 h-2 bg-manga-accent-olive rotate-45"></div>
-            </div>
-            <div className="h-px flex-1 bg-manga-gray-300"></div>
-          </div>
-          <h2 className="font-display text-5xl md:text-6xl text-manga-black text-center tracking-tight">
-            MIS PROYECTOS
-          </h2>
-        </div>
+        <SectionTitle label="Portfolio" title="MIS PROYECTOS" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (

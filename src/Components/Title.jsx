@@ -1,5 +1,5 @@
 import React from "react";
-
+import man from "/me.png";
 import SocialLinks from "./MiniComponents/SocialLinks";
 
 const socialLinks = [
@@ -19,7 +19,7 @@ export const Title = () => {
         <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-ink to-transparent transform rotate-1"></div>
       </div>
       
-      <div className="max-w-7xl mx-auto px-4 py-24 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10">
         {/* Left: Text content - professional clean */}
         <div className="space-y-10 animate-slide-in-left">
           {/* Badge minimalista */}
@@ -78,10 +78,14 @@ export const Title = () => {
         <div className="relative animate-slide-in-right">
           {/* Panel manga con sombra sutil */}
           <div className="relative bg-white border-4 border-manga-black p-3 shadow-panel-hover">
-
+            <img
+              src={man}
+              alt="Diego Bravo Arias - QA Engineer"
+              className="w-full h-auto grayscale-[20%] contrast-110"
+            />
             
             {/* Badge disponible minimalista */}
-            <div className="absolute -bottom-4 -right-4 bg-manga-accent-red text-white px-6 py-3 border-2 border-manga-black shadow-manga-lg">
+            <div className="absolute -bottom-4 -right-4 bg-manga-accent-olive text-white px-6 py-3 border-2 border-manga-black shadow-manga-lg">
               <span className="font-inter text-sm font-bold tracking-wide">DISPONIBLE</span>
             </div>
 

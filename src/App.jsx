@@ -2,24 +2,22 @@ import './App.css'
 import { Navbar } from './Components/Navbar'
 import { Title } from './Components/Title'
 import { AboutMe } from './Components/AboutMe'
-import { TestingExperience } from './Components/TestingExperience'
 import { Portfolio } from './Components/Portfolio'
-import { Resume } from './Components/Resume'
+import { Experience } from './Components/Experience'
 import { Contact } from './Components/Contact'
 import { Footer } from './Components/Footer'
 
 function App() {
   return (
-    <main className="pt-20">
+    <>
       <Navbar />
       <Title />
       <AboutMe />
-      <TestingExperience />
       <Portfolio />
-      <Resume />
+      <Experience />
       <Contact />
       <Footer />
-    </main>
+    </>
   );
 }
 
