@@ -1,16 +1,32 @@
-# Hi, I'm Diego Bravo! 👋🍃
+# Hi, I'm Diego Bravo 👋🌱
 
 ## About Me
 
-I am a passionate 25-year-old software developer who loves exploring the worlds of technology and the arts. When I'm not coding, I enjoy strolling around the city, capturing unique moments through photography, cooking delicious meals, and relaxing with video games. I also play the violin, which is one of my favorite ways to express my creativity.
+Fullstack developer with hands-on experience in React, Firebase, and PHP/MVC, currently studying **Agricultural Engineering** at the Universidad Nacional de Colombia (UNAL). I'm building toward a specific intersection: technology that genuinely understands and serves agricultural systems — not tech for tech's sake.
 
-## Experience
+Outside of code, I play the violin, walk around the city with a camera, and cook when I get the chance.
 
-I am currently completing my professional internship at **[Sydicol](https://www.sydicol.com.co/)**, where I have been assigned to Manual Testing and QA, working on exciting and challenging projects. At the same time, I'm developing various personal projects, which you can explore in my GitHub repositories. I hope you find something interesting in my work!
+## What I'm doing
 
-## Connect With Me
+- 🎓 Studying Agricultural Engineering at UNAL
+- 💻 Building fullstack projects across web (React, Vite, Firebase) and mobile (Flutter), with CI/CD pipelines
+- 🌾 Exploring where software meets agriculture — that's the long game
+- 📍 Based in Bogotá, Colombia
 
-- 🌐 [Visit my GitHub](https://github.com/dnbravo04)
-- 📸 Always on the lookout for the perfect shot during my walks.
+## Tech Stack
 
-Thanks for visiting my profile! 😄
+`React` `Vite` `Tailwind` `Firebase` `Flutter` `PHP/MVC` `GitHub Actions`
+
+## Featured Projects
+
+- **[PlantyLink](https://github.com/dnbravo04/PlantyLink)** — Hydroponic monitoring app (Flutter) that pairs with an ESP32 over NFC to stream real-time sensor data (pH, temperature, EC, tank levels) and enriches plant profiles via an external plant catalog API. My clearest example of where agriculture and software meet.
+- **[Territory Run](https://territory-run.netlify.app/)** — Gamified running app (Flutter) that turns runs into city-conquering territory challenges, with live tracking, achievements, and leaderboards. [18 commits / 93k+ lines authored](https://github.com/Cata1024/Running/commits?author=dnbravo04).
+- **[workshopsoftware](https://github.com/dnbravo04/workshopsoftware)** — Full motorcycle workshop management system built in PHP using the MVC pattern.
+- **[anaygabriel](https://github.com/dnbravo04/anaygabriel)** — Custom event invitation site with automated CI/CD deployment (React, Vite, Firebase).
+
+## Connect
+
+- 🌐 [Portfolio](https://dnbravo.web.app)
+- 💼 Open to remote/flexible roles
+
+Thanks for stopping by 😄
