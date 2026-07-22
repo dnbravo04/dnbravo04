@@ -1,7 +1,7 @@
 import React from "react";
 import project1 from "/territory-run.png";
 import project2 from "/academia-ukelele.png";
-import project3 from "/hydrotracker.png";
+import project3 from "/PlantyLink.png";
 import SectionTitle from "./MiniComponents/SectionTitle";
 
 const projects = [
@@ -23,12 +23,11 @@ const projects = [
   },
   {
     image: project3,
-    title: "HydroTracker",
+    title: "PlantyLink",
     problem: "Falta de herramientas accesibles para monitorear parámetros críticos en cultivos hidropónicos domésticos e institucionales",
-    solution: "App Flutter con integración ESP32 para monitoreo en tiempo real de pH, temperatura y nivel de agua, con automatización de riego y alertas. Desarrollada como proyecto académico en Ingeniería Agrícola — UNAL",
+    solution: "App movil integrada con dispositivos IoT para monitorear, regar y fertilizar plantas caseras y cultivos hidroponicos que puede ser utilizado en hogares, por agricultores novatos y estudiantes e investigadores.",
     stack: ["Flutter", "Firebase", "IoT"],
-    link: "#",
-    prototype: true,
+    link: "https://plantylink.netlify.app/",
   },
 ];
 
@@ -57,12 +56,6 @@ export const Portfolio = () => {
                   alt={`Captura del proyecto ${project.title}`}
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-manga-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                {project.prototype && (
-                  <div className="absolute top-4 right-4 bg-manga-accent-olive text-white px-4 py-2 font-inter text-xs font-bold uppercase tracking-wider">
-                    Prototipo
-                  </div>
-                )}
               </div>
 
               <div className="p-8">
